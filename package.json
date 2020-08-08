@@ -1,0 +1,26 @@
+{
+  "name": "dontmindit",
+  "version": "2.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
+    "moment": "^2.27.0",
+    "nuxt": "^2.14.0",
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-date-pick": "^1.4.1",
+    "vue-swatches": "^2.1.0",
+    "vuedraggable": "^2.24.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^2.1.0"
+  }
+}
