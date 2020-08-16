@@ -2,7 +2,7 @@
     <div class="flex cursor-pointer" @click="$emit('click')">
         <div
             :class="[isChecked ? 'bg-color-prime ripple' : 'bg-gray-200']"
-            class="item-checkbox rounded-full transition-all duration-300 ease-in-out"
+            class="task-checkbox rounded-full transition-all duration-300 ease-in-out"
         >
         </div>
         <slot></slot>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'item-checkbox',
+    name: 'task-checkbox',
     props: {
         isChecked: Boolean
     }
@@ -19,12 +19,12 @@ export default {
 </script>
 
 <style lang="css">
-    .item-checkbox {
+    .task-checkbox {
         width: 2rem;
         height: 2rem;
         
     }
-    .item-checkbox::before {
+    .task-checkbox::before {
         position: absolute;
         display: block;
         content: "";
@@ -36,10 +36,10 @@ export default {
         border-left-width: 0;
         transform: translate(11px, 6px)rotate(45deg);
     }
-    .item-checkbox.ripple::before {
+    .task-checkbox.ripple::before {
         animation: validation 0.4s forwards ease-in-out;
     }
-    .item-checkbox::after {
+    .task-checkbox::after {
         display: block;
         content: "";
         width: 100%;
@@ -49,7 +49,7 @@ export default {
         pointer-events: none;
         border: 2px solid #3609fb;
     }
-    .item-checkbox.ripple::after {
+    .task-checkbox.ripple::after {
         animation: ripple 0.4s forwards ease-in;
     }
     .bg-color-prime {
